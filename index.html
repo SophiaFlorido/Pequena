@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+   
+    <form>
+        <div class="tela-login">
+                     <h1>Insira</h1>             
+        <div class="input">
+        <input type="text" placeholder="Nome" id="Nome">
+        <br><br>
+        <input type="password" placeholder="Senha" id="Senha">
+        <br><br>
+        
+    </div>
+         <div class="button">
+        <input type="submit" onclick="Entrar();return false">   
+        </div>
+    </div>
+          
+ 
+        
+        
+        
+    </form>
+
+    <script>
+        function Entrar(){
+            var Nome = document.getElementById('Nome').value;
+            var Senha = document.getElementById('Senha').value;
+
+            if(Nome == "Pequena" && Senha == "My Kind of Woman"){
+                alert('sucesso');
+                location.href = "inicial.html";
+            }else{
+                alert('Usuario ou Senha incorretos');
+            }
+
+        }
+    </script>
+</body>
+</html>
